@@ -11,7 +11,7 @@ import UIKit
 class ArticlesViewController: UITableViewController {
     
     var articles = [[String:String]]()
-    let apiKey = ""
+    var apiKey = ""
     var source = [String:String]()
     
     override func viewDidLoad() {

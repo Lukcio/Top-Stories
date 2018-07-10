@@ -11,7 +11,8 @@ import UIKit
 class SourcesViewController: UITableViewController {
     
     var sources = [[String:String]]()
-    let apiKey = "5d892509a49046a087917c466fa80d09" 
+    var articles = [[String:String]]()
+    var apiKey = "5d892509a49046a087917c466fa80d09"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,6 +76,21 @@ class SourcesViewController: UITableViewController {
         cell.detailTextLabel?.text = source["description"]
         return cell
     }
-
+    
+    @IBAction func onTappedDoneButton(_ sender: Any) {
+        exit(0)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! ArticlesViewController
+        let index = tableView.indexPathForSelectedRow?.row
+        dvc.source = sources[index!]
+        dvc.apiKey = apiKey
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let url = URL(string: articles[indexPath.row]["url"]!)
+        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
+    }
 }
 
