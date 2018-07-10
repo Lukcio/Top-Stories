@@ -12,6 +12,7 @@
 		14AE07E220F502D0005D15FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE07E020F502D0005D15FA /* Main.storyboard */; };
 		14AE07E420F502D3005D15FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE07E320F502D3005D15FA /* Assets.xcassets */; };
 		14AE07E720F502D3005D15FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE07E520F502D3005D15FA /* LaunchScreen.storyboard */; };
+		14AE07EF20F5054A005D15FA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE07EE20F5054A005D15FA /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		14AE07E320F502D3005D15FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14AE07E620F502D3005D15FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14AE07E820F502D3005D15FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AE07EE20F5054A005D15FA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				14AE07E320F502D3005D15FA /* Assets.xcassets */,
 				14AE07E520F502D3005D15FA /* LaunchScreen.storyboard */,
 				14AE07E820F502D3005D15FA /* Info.plist */,
+				14AE07EE20F5054A005D15FA /* SwiftyJSON.swift */,
 			);
 			path = "Top Stories";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AE07EF20F5054A005D15FA /* SwiftyJSON.swift in Sources */,
 				14AE07DF20F502D0005D15FA /* SourcesViewController.swift in Sources */,
 				14AE07DD20F502D0005D15FA /* AppDelegate.swift in Sources */,
 			);
