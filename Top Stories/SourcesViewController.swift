@@ -11,7 +11,7 @@ import UIKit
 class SourcesViewController: UITableViewController {
     
     var sources = [[String:String]]()
-    var articles = [[String:String]]()
+    let articles = [[String:String]]()
     var apiKey = "5d892509a49046a087917c466fa80d09"
 
     override func viewDidLoad() {
